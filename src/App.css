@@ -1,38 +1,272 @@
 .App {
   text-align: center;
+  background-color: rgb(121, 121, 121);
+  height: 100vh;
+  background-image: url("https://e1.pxfuel.com/desktop-wallpaper/499/576/desktop-wallpaper-pomeranian-puppy-group-teacup-puppies.jpg");
+  background-size: cover;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header-container {
   display: flex;
-  flex-direction: column;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  height: 4rem;
+  background-color: rgb(199, 187, 187);
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+.dogsData {
+  margin-top: 4rem;
+}
+.dogsImg {
+  width: 60%;
+  height: 430px;
+  margin-top: 1rem;
+  border-radius: 2%;
+  box-shadow: 1rem 1rem 2rem 1rem rgba(0, 0, 0, 0.5);
+}
+.content {
+  display: flex;
+  align-items: center;
+  margin-left: 2rem;
+}
+.dogs {
+  color: red;
+}
+.dog-img {
+  height: 3rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.dogs-find {
+  display: flex;
+  margin-left: 15rem;
+  font-weight: 700;
+  /* font-size: 1.5rem; */
+  color: rgb(6, 149, 37);
+}
+.running {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+.btn {
+  height: 2.5rem;
+  width: 9rem;
+  margin-top: 1rem;
+  border-radius: 1rem;
+  background-color: rgb(109, 214, 214);
+  border: none;
+  font-weight: 800;
+  color: brown;
+  cursor: pointer;
+}
+.btn:hover {
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  background-color: rgb(76, 248, 177);
+}
+.footer-container {
+  /* display: flex; */
+  /* align-items: center;
+  justify-content: center; */
+  background-color: rgb(231, 220, 220);
+  color: rgb(85, 120, 141);
+}
+.dog-web {
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 3rem;
+  /* color: rgb(14, 14, 42); */
 }
-
-.App-link {
-  color: #61dafb;
+.website-1 {
+  display: flex;
+  flex-direction: column;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.dog-1 {
+  font-size: 3.5rem;
+  font-weight: 600;
+  /* color: rgb(14, 14, 42); */
+  text-align: start;
+  margin-left: 5rem;
+}
+.p-tag {
+  font-size: 1.2rem;
+  color: rgb(99, 99, 135);
+  text-align: start;
+  margin-left: 6rem;
+  margin-right: 6rem;
+}
+.image-dog {
+  height: 7rem;
+  width: 25rem;
+  margin-left: 5rem;
+  margin-top: 2rem;
+}
+.someDogs {
+  width: 8%;
+}
+.someDogsContainer {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-left: 5rem;
+}
+.someDogs-2 {
+  width: 20%;
+}
+.footer-con {
+  background-color: rgb(7, 7, 23);
+  color: rgb(241, 225, 225);
+}
+.speical-dogs {
+  font-size: 3rem;
+  font-weight: 600;
+  font-family: cursive;
+  padding: 2rem;
+  > span {
+    color: rgb(252, 83, 83);
+    font-style: italic;
   }
-  to {
-    transform: rotate(360deg);
+}
+.font-icon {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 1rem;
+}
+.icons {
+  font-size: 3rem;
+  color: rgb(124, 123, 122);
+  &:hover {
+    cursor: pointer;
+    color: rgb(220, 217, 217);
+  }
+}
+.name {
+  color: rgb(124, 123, 122);
+  padding: 1rem;
+}
+@media only screen and (max-width: 322px) {
+  .header-container {
+    background-color: lightblue;
+  }
+  .dogsImg {
+    width: 90%;
+    height: 260px !important;
+    border-radius: 5%;
+  }
+  .content {
+    font-size: 0.6rem;
+  }
+
+  .dog-img {
+    height: 1.5rem;
+    margin-top: 1.5rem;
+  }
+  .find-content {
+    width: 2rem;
+    display: flex;
+    align-items: center;
+  }
+  .dogs-find {
+    font-size: 0.8rem;
+    margin-left: 0rem;
+  }
+  .running {
+    margin-right: 0.9rem;
+  }
+  .image-dog {
+    height: 5rem !important;
+    width: 9rem !important;
+    margin-left: 6rem;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .header-container {
+    background-color: lightblue;
+  }
+  .dogsImg {
+    width: 90%;
+    height: 350px;
+    border-radius: 5%;
+  }
+  .content {
+    font-size: 0.7rem;
+  }
+  .dog-img {
+    height: 2.5rem;
+    margin-top: 1rem;
+  }
+  .find-content {
+    width: 9rem;
+    display: flex;
+    align-items: center;
+  }
+  .dogs-find {
+    font-size: 0.8rem;
+    margin-left: 0rem;
+  }
+  .footer-container {
+    background-color: rgb(231, 220, 220);
+    color: rgb(85, 120, 141);
+    /* font-size: 1rem; */
+  }
+  .dog-web {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.2rem;
+  }
+  .website-1 {
+    display: flex;
+    flex-direction: column;
+  }
+  .dog-1 {
+    font-size: 1.5rem;
+    margin-left: 5rem;
+  }
+  .p-tag {
+    font-size: 0.6rem;
+    color: rgb(99, 99, 135);
+  }
+  .image-dog {
+    height: 9rem;
+    width: 15rem;
+    margin-left: 6rem;
+  }
+  .someDogsContainer {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-left: 5rem;
+  }
+  .someDogs {
+    width: 20%;
+    margin-left: 0.5rem;
+  }
+  .someDogs-2 {
+    width: 50%;
+  }
+  .btn {
+    height: 2rem;
+    width: 7rem;
+    color: rgb(154, 76, 76);
+    background-color: rgb(122, 234, 238);
+  }
+  .btn:hover {
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    background-color: rgb(177, 244, 250);
+  }
+  .speical-dogs {
+    font-size: 1.5rem;
+  }
+  .icons {
+    font-size: 1.5rem;
+  }
+  .name {
+    font-size: 0.8rem;
   }
 }
